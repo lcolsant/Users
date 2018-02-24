@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Users</title>
+        <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                
+                $("button").click(function(){
+                    $("table").append('<tr><td>' + $('input[name="fname"]').val() + '</td><td>'
+						+ $('input[name="lname"]').val() + '</td><td>'
+						+ $('input[name="email"]').val() + '</td><td>'
+						+ $('input[name="contact"]').val() + '</td></tr>');
+                });
+
+            });
+            
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>jQuery - assignment 3</h1>
+            <h3>Adding users to a table using jQuery</h3>
+            <table>
+                <tr>
+                    <th>First Name:</th>
+                    <th>Last Name:</th>
+                    <th>Email Address:</th>
+                    <th>Contact No. :</th>
+                </tr>
+                <!-- <tr>
+                    <td>First Namme:</td>
+                    <td>Last Namme:</td>
+                    <td>Email Address:</td>
+                    <td>Contact No.:</td>
+                </tr> -->
+            </table>
+            <h1>Add User:</h1>
+            <form action="process.php" method="post">
+                <p>
+                    <label>First Name: </label>
+                    <input type="text" id="fname" name="fname" placeholder="First Name">
+                </p>
+                <p>
+                    <label>Last Name: </label>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                </p>
+                <p>
+                    <label>Email:    </label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                </p>
+                <p>
+                    <label>Contact No.:</label>
+                    <input type="text" id="contact" name="contact" placeholder="Contact">
+                </p>
+
+            </form>
+            <button>Add User</button>
+        </div>
+    </body>
+</html>
