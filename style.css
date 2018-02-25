@@ -36,6 +36,7 @@ button {
     margin-top: 20px;
     display: block;
     background-color: var(--primary);
+    padding-left: 15px;
 
 }
 
