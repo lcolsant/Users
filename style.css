@@ -4,7 +4,9 @@
     border:0;
     font-family: Arial;
 }
-
+:root {
+    --primary: #1b4d86;
+}
 .container {
     /* outline: 2px dotted blue; */
     width: 1075px;
@@ -18,7 +20,7 @@ h1, h3 {
     margin-top: 30px;
     margin-left: 40px;
     margin-bottom: 30px;
-    color: #1b4d86;
+    color: var(--primary);
 }
 
 
@@ -26,14 +28,14 @@ button {
     width: 150px;
     height: 50px;
     color:white;
-    border: 2px solid #1b4d86;
+    border: 2px solid var(--primary);
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
     margin-left: 20px;
     margin-top: 20px;
     display: block;
-    background-color: #1b4d86;
+    background-color: var(--primary);
 
 }
 
@@ -42,7 +44,7 @@ table {
     margin-left: 20px;
     margin-top: 20px;
     /* display: block; */
-    border-bottom: 1px solid #1b4d86;
+    border-bottom: 1px solid var(--primary);
 }
 
 th {
@@ -51,14 +53,15 @@ th {
 
 form {
     margin: 20px;
-    color: #1b4d86;
-        
+    color: var(--primary);
+    width: 33%;
 }
 input {
-    border: 1px solid #1b4d86;
-    color: #1b4d86;
-    display: inline-block;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    /* display: inline-block; */
     width: 200px;
+    /* float: right; */
 }
 
 
